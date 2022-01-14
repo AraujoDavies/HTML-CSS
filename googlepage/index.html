@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        header{
+            display: flex;
+            justify-content: flex-end;
+            flex: 0.5;
+            align-items: center;
+            flex-direction: row;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            flex: 8;
+        }
+        footer{
+            display:flex;
+            flex-direction: column;
+            flex: 1.5;
+            font-size: 16px;
+            color: #70757a;
+            text-transform: capitalize;
+        }
+        .row{display: flex; flex-direction: row;}
+        .space-between{display: flex; justify-content: space-between;}
+        .esquerda div{
+            padding: 10px;
+            align-items: flex-end;
+        }
+        .esquerda{
+            padding-left: 2%;
+        }
+        .direita{
+            padding-right: 2%;
+        }
+        .direita div{
+            padding: 10px;
+            align-items: flex-end;
+        }
+        .flex1{
+            display: flex;
+            flex: 1;
+        }
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        header div{
+            display: flex;
+            flex-direction: row;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-items: center;
+        }
+        .p1 div{
+            padding-right: 15px ;
+        }
+        .p2 div{
+            padding-right: 15px ;
+        } 
+        div .menu-openner{
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        #logo{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .area-logo{
+            width: 300px;
+            height: 70%;
+            display: flex;
+            background-image: url(g.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .jfcenter{
+            display: flex;
+            justify-content: center;
+        }
+        .p1 div a{
+            font-size: 12px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        #botoes{
+            align-self: center;
+            margin-top: 30px;
+            
+        }
+        button{
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-style: none;
+            color: black;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 2px;
+
+        }
+        button:hover{
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-style: none;
+            color: black;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 2px;
+            border: 0.5px solid #70757a;
+        }
+        
+        .input {
+            border: solid #dfe1e5 1px;
+            border-radius: 50px ;
+            width: 500px;
+            display: flex;
+            height: 50px;
+            line-height: 40px;
+            font-size: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .input:hover{
+            /*X shadow | Y shadow | SIZE | color */
+            box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+        }
+        input{
+            border: none;
+            width: 380px;
+            outline: 0; /* tira borda ao clicar no input */
+        }
+        .acess{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .keyword, .talk, .lupa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .lupa img{
+            border-radius: 40%;
+        }
+        .oval:hover, .oval img:hover{
+            box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+            cursor: pointer;
+            background: rgba(0,0,0, 0.1);
+        }
+        div .oval{
+            height: 20px;
+            width: 30px;
+            border-radius: 50%;
+            display:flex;
+        }
+        .p2 div{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        #menuh{
+            padding-right: 3px;
+        }
+        #photoh img{
+            margin: 0px 10px;
+            border-radius: 50%;
+        }
+        .p2{
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="p1">
+                <div><a href="">Gmail</a></div>
+                <div><a href="">Imagens</a></div>
+            </div>
+            <div class="p2" style="padding-right: 0;">
+                <div>
+                    <div class="oval" id="menuh">  
+                        <img src="menu.png" width="15px" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="oval" id="photoh"><img src="anonimo.png" alt="" width="30px"></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section >
+        <div class="flex1 jfcenter"> 
+            <div id="logo"> <div class="area-logo"></div> </div>
+        </div>
+       
+       
+        <div class="flex1 jfcenter">        
+            <div class="column">
+                <div class="input"> 
+                    <div class="lupa">
+                        <img src="lupa.png" alt="" width="30px">
+                    </div>
+                    <input type="text" name="busca" id="busca">
+                    <div class="acess">
+                        <div class="keyword"><img src="keyboard.png" alt="" width="30px"></div>
+                        <div class="talk"><img src="mic.png" alt="" width="30px"></div>
+                    </div>
+                </div>
+            
+                <div id="botoes"> 
+                    <button for="busca"> Pesquisa Google</button> 
+                    <button for="busca"> Estou com sorte</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex1"></div>
+        
+    </section>
+
+    <footer style="background-color: #f2f2f2;">
+        <div class="flex1" style="align-items: center; padding-left: 5%; ">
+            <div>brasil</div>    
+        </div>
+        <div class="space-between row flex1" style="border-top: solid 1px #dadce0;">
+            <div class="esquerda row">
+                <div><a href=""> publicidade </a></div>
+                <div><a href=""> negocios </a></div>
+                <div><a href=""> sobre </a></div>
+            </div>
+            <div class="direita row">
+                <div><a href=""> privacidade </a></div>
+                <div><a href=""> termos </a></div>
+                <div><a href=""> configurações </a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
