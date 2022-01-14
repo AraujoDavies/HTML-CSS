@@ -1,0 +1,210 @@
+body{
+    background-color: black;    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 900px;
+    height: auto;
+    background-color: beige;
+}
+
+.apresentacao{ /* nome ,descrição e foto da pessoa */
+    display: flex;
+    flex: 1;
+    text-align: center;
+    background-color: beige;
+    margin-bottom: 25px;
+}
+.column{ 
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+
+.nome h1{ /*espaçamento entre navegador e o nome do tributo */
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.apelido{ /* Mr robot */
+    color: red;
+}
+
+.description p{ /*Espaçamento da descrição */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.foto{ /* especificação da foto */
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Mr-Robot.jpg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+}
+
+.splitin2{ /*dividindo a 1°Section em duas colunas */
+    display: flex;
+    flex: 1;
+    margin-top: 15px;
+    padding-bottom: 15;
+    background-color: black;
+}
+
+.mr-robot-img{
+    flex: 1;
+    min-height: 350px;
+    background-image: url('section.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.terminal{ /* terminal com os LI (hobbies and façanhas) */
+    display: flex;
+    flex: 2;
+    height: auto;
+    border-left: SOLID white 5px;
+    border-bottom: SOLID white 5px;
+    border-right: SOLID white 5px;
+    background-color: black;
+    color: white;
+}
+
+.terminal div{ /*cada linha do terminal */
+    padding-left: 10px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+}
+
+.terminal li{  /* manter o padrão das divs*/
+    letter-spacing: 1px;
+}
+
+._oxpai{ /*base para color detalhes da janela */
+    background-color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: black;
+    display: flex;
+}
+
+._ox { /* detalhes da janela */
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+}
+
+.cdgit{ /*espaço da 1°linha do terminal */
+    padding-bottom: 10px;
+}
+
+#elliot-terminal .container {
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.wa { /*base para wiki e amazon */
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-top: 20px ;
+}
+
+.w, /* ajustando espaço da amazon e do wiki */
+.a{
+    display: flex;
+    flex: 1;
+    font-size: 20px;
+    
+}
+
+.a{ /* ajustando a posição do amazon apenas*/
+    justify-content: flex-end;
+}
+
+.a .sub-a{ /* ajustando a posição do amazon apenas*/
+    padding-right: 100px;
+}
+
+.w{
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+footer{ /* criando espaço para ajustar o container  */
+    display: flex;
+    justify-content: center;
+}
+
+footer .container{ 
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.social-copyright .social { /* bola para colocar img do git ou qqr rede social */
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 20px;
+    background-image: url('download.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.social-copyright {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* alinha bola de rede social ao centro*/
+}
+
+.cp{
+    padding: 5px;
+    text-align: center; /* alinha o texto ao centro */
+}
+
+.wa .click{ /* area clicavel para amazon e wikipedia*/
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*estilizando frase final*/
+.frase{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.frase span{
+    font-size: 18px;
+    
+}
