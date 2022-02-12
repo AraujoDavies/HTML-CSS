@@ -1,0 +1,174 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bg{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    padding: 5px;
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    align-items: center;
+}
+
+#logo{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: -5px;
+    cursor: pointer;
+}
+#toggle-icon{
+    display: block;
+    padding-left: 3px;
+}
+.barra{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+.row{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: #ccc;
+}
+
+.row a{
+    text-decoration: none;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.section-bg{
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    background-image: url(img/fifa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-center{
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+}
+.section-title, .section-desc{
+    flex: 1;
+    max-width: 500px;
+}
+.section-title{
+    display: flex;
+    align-items: flex-end;
+}
+
+h1{
+    font-size: 60px;
+    color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+.section-desc p{
+    font-size: 20px;
+    color: #ccc;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.section-desc button{
+    background-color: transparent;
+    border: solid #ccc 1px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 19px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.section2-bg{
+    display: flex;
+    justify-content: center;
+}
+
+.flex1{
+    flex: 1;
+}
+
+.section2flex{
+    display: flex;
+}
+
+.icon-trof{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: #ccc solid 1px;
+    background-image: url(img/trofeu.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon-cif{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: #ccc solid 1px;
+    background-image: url(img/cifrao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon-cont{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: #ccc solid 1px;
+    background-image: url(img/controle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon-title, .icon-desc, .icon-border{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.jfcenter{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+@media(max-width: 500px){
+    .section2flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-bg{
+        display: flex;
+        justify-content: center;
+        min-height: 600px;
+        background-image: url(img/fifa.jpg); /* MUDAR IMAGEM EM CELU*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
